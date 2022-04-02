@@ -10,6 +10,11 @@
   --primary-body-color: #f4f6f9;
   --primary-font-family: "Open Sans", sans-serif;
   --secondary-font-family: "Roboto Condensed", sans-serif;
+
+  --primary-additional-color: #f7f279;
+
+  --primary-broder-radius: 15px;
+
 }
 
 * {
@@ -22,6 +27,12 @@
 body {
   background-color: var(--primary-body-color) !important;
   font-family: var(--primary-font-family) !important;
+}
+
+.heading
+{
+  font-family: var(--secondary-font-family);
+  font-size: 40px!important;
 }
 
 a {
@@ -53,7 +64,6 @@ li {
 {
   background-color: var(--primary-color-dark);
 }
-
 
 .sizedBox
 {
@@ -173,27 +183,15 @@ section .heading {
   position: relative;
 }
 
-section .heading .heading-underline {
+#categories-section .heading .heading-underline {
   position: absolute;
   text-align: center;
   width: 70px;
   height: 10px;
   background-color: var(--primary-color);
-  right: 785px;
+  right: 745px;
 }
-
-@media screen and (max-width: 768px) {
-
-  section .heading .heading-underline {
-    right: 63%;
-    width: 100px;
-    height: 15px;
-}
-  
-}
-/* Card Starts Here */
-
-/* Card Styles */
+/* Our Courses Card starts here */
 
 .card-sl {
   border-radius: 8px;
@@ -294,7 +292,398 @@ section .heading .heading-underline {
   }
 }
 
-/* Card Ends here */
+
+@media screen and (max-width: 768px) {
+
+  #categories-section .heading .heading-underline {
+    right: 52%;
+    width: 100px;
+    height: 15px;
+}
+  
+}
+
+/* Our Courses Card Ends here */
+
+
+
+/*Our Team Card starts here*/
+
+
+#our-team-section .heading .heading-underline {
+  position: absolute;
+  text-align: center;
+  width: 70px;
+  height: 10px;
+  background-color: var(--primary-color);
+  right: 785px;
+}
+
+@media screen and (max-width: 768px) {
+
+  #our-team-section .heading .heading-underline {
+    right: 63%;
+    width: 100px;
+    height: 15px;
+}
+  
+}
+
+.profile-card-3 {
+  font-family: 'Open Sans', Arial, sans-serif;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  width: 100%;
+  text-align: center;
+  height:368px;
+  border:none;
+  border-radius: var(--primary-broder-radius);
+}
+.profile-card-3 .background-block {
+    float: left;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+.profile-card-3 .background-block .background {
+  width:100%;
+  height: 240px;
+  vertical-align: top;
+  opacity: 0.9;
+  -webkit-filter: blur(0.5px);
+  filter: blur(0.5px);
+   -webkit-transform: scale(1.8);
+  transform: scale(1);
+}
+.profile-card-3 .card-content {
+  width: 100%;
+  padding: 15px 25px;
+  color:#232323;
+  float:left;
+  /* background: var(--primary-color); */
+  background-color: #f7f279;
+  height:50%;
+  border-radius:0 0 5px 5px;
+  position: relative;
+  z-index: 9999;
+}
+.profile-card-3 .card-content::before {
+    content: '';
+    /* background: var(--primary-color); */
+    background-color: #f7f279;
+    width: 120%;
+    height: 100%;
+    left: 11px;
+    bottom: 51px;
+    position: absolute;
+    z-index: -1;
+    transform: rotate(-13deg);
+}
+
+.profile-card-3 .profile {
+  border-radius: 50%;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  max-width: 100px;
+  opacity: 1;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
+  border: 2px solid rgba(255, 255, 255, 1);
+  -webkit-transform: translate(-50%, 0%);
+  transform: translate(-50%, 0%);
+  z-index:99999;
+}
+.profile-card-3 h2 {
+  margin: 0 0 5px;
+  font-weight: 600;
+  font-size:25px;
+}
+.profile-card-3 h2 small {
+  display: block;
+  font-size: 15px;
+  margin-top:10px;
+  font-family: var(--secondary-font-family);
+  font-weight: 700;
+  
+}
+.profile-card-3 i {
+  display: inline-block;
+    font-size: 16px;
+    color: #232323;
+    text-align: center;
+    border: 1px solid #232323;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    margin:0 5px;
+}
+
+.profile-card-3 .profile-thumb-block:hover
+{
+  cursor: pointer;
+  color: #fff;
+  background: var(--primary-color);
+  -webkit-animation: pulse 1.5s infinite;
+  z-index: 99999;
+}
+
+.profile-card-3 .icon-block{
+    float:left;
+    width:100%;
+    margin-top:15px;
+}
+.profile-card-3 .icon-block a{
+    text-decoration:none;
+}
+.profile-card-3 i:hover {
+  background-color:#232323;
+  color:#fff;
+  text-decoration:none;
+}
+
+/*Our Team Card ends here*/
+
+
+/* Client Feedback card stars here */
+
+#client-feedback-section .heading .heading-underline {
+  position: absolute;
+  text-align: center;
+  width: 70px;
+  height: 10px;
+  background-color: var(--primary-color);
+  right: 800px;
+}
+
+@media screen and (max-width: 768px) {
+
+  #client-feedback-section .heading .heading-underline {
+    right: 66%;
+    width: 100px;
+    height: 15px;
+}
+  
+}
+
+.client-feedback-card .small {
+  letter-spacing: 0.5px !important
+}
+
+.client-feedback-card .card {
+  box-shadow: 0px 5px 16px rgba(223, 241, 223, 0.5);
+  transition: 0.8s;
+  /* background: #333; */
+  background: var(--primary-bg-color);
+  margin: 0 auto;
+  box-sizing: border-box;
+  overflow: hidden;
+  /* border-radius: 7px !important; */
+  border-radius: var(--primary-broder-radius);
+  width: 800px;
+  height: 400px;
+}
+
+.client-feedback-card .card-header,
+.client-feedback-card .card-footer {
+  border-radius: 7px !important
+}
+
+.client-feedback-card .card:after {
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 100%;
+  z-index: 9999;
+  height: 100%;
+  pointer-events: none
+}
+
+.client-feedback-card .card-body
+{
+  background: none;
+}
+
+.client-feedback-card .card-title img {
+  z-index: 99999 !important
+}
+
+.client-feedback-card .card .layer {
+  position: absolute;
+  top: calc(100% - 5px);
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(var(--primary-color), var(--primary-bg-color));
+  left: 0;
+  z-index: 1;
+  transition: 0.5s
+}
+
+.client-feedback-card .card:hover {
+  box-shadow: -5px 50px 100px rgba(223, 241, 223, 0.5)
+}
+
+.client-feedback-card .card:hover hr {
+  background-color: var(--primary-white-color);
+}
+
+.client-feedback-card .card:hover h4 {
+  font-weight: 600
+}
+
+.client-feedback-card .card:hover p {
+  color: var(--primary-white-color);
+  font-weight: 600
+}
+
+.client-feedback-card .card:hover small {
+  font-weight: 600
+}
+
+.client-feedback-card .card:hover .layer {
+  top: 0
+}
+
+.client-feedback-card .card .content {
+  position: relative;
+  z-index: 2
+}
+
+.client-feedback-card .card .content .img-1 {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 5px solid white !important
+}
+
+.client-feedback-card .card h4 {
+  color: #fff;
+  font-weight: 500
+}
+
+.client-feedback-card hr {
+  background-color: rgb(117, 117, 117);
+  width: 80% !important;
+  transition: 1s
+}
+
+.client-feedback-card .bold {
+  font-weight: 500
+}
+
+.client-feedback-card .client-name
+{
+  font-family: var(--secondary-font-family);
+  font-style: italic;
+}
+
+.client-feedback-card .client-profession
+{
+  font-family: var(--secondary-font-family);
+  font-size: 15px;
+  font-weight: 600;
+}
+
+
+@media (max-width: 479px) {
+  .client-feedback-card p {
+      padding: 0 !important
+  }
+
+  .client-feedback-card .img-1 {
+      width: 50px;
+      height: 50px;
+      
+  }
+
+  .client-feedback-card .card
+  {
+    width: 440px;
+    height: 300px;
+  }
+
+
+}
+/* Client Feedback card ends   here */
+
+
+/* Misc section starts here */
+
+#misc-section
+{
+  position: relative;
+}
+
+.motivation-area
+{
+  height: 600px;
+  width: 100%;
+  background: url('https://cdn.pixabay.com/photo/2017/11/09/16/16/man-2933984_1280.jpg');
+  background-attachment: fixed;
+}
+
+#misc-section .section-footer
+{
+  width: 1000px;
+  height: 200px;
+  /* background: var(--primary-color); */
+  /* bottom: 0; */
+}
+
+
+/* 
+.misc-wave {
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, sandybrown, chocolate);
+  background: var(--primary-additional-color);
+  width: 100%;
+  height: 500px;
+  margin-bottom: 20px;
+
+}
+
+  .misc-wave::before,
+  .misc-wave::after
+  {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-repeat: repeat-x;
+  bottom: auto;
+  top: 0;
+
+  }
+  
+  .misc-wave::before{
+    height: 10px;
+    background-size: 10px 10px;
+    background-image: radial-gradient(circle at 10px -5px, transparent 12px, transparent 13px);
+
+    background-image: radial-gradient(circle at 10px 15px, transparent 12px, white 13px); 
+    background-image: radial-gradient(circle at 10px 15px, transparent 12px, transparent 13px);
+  }
+
+  .misc-wave::after {
+    height: 15px;
+    background-size: 40px 20px;
+    background-image: radial-gradient(circle at 10px 15px, white 12px, transparent 13px);
+
+    background-image: radial-gradient(circle at 10px 0, white 12px, transparent 13px);
+    background-image: radial-gradient(circle at 10px 15px, var(--primary-color)-12px, transparent 13px);
+
+    background-image: radial-gradient(circle at 10px 0, var(--primary-color) -12px, transparent 13px);
+  } */
+
+/* Misc section ends here */
 
 
 
