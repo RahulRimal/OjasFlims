@@ -22,10 +22,6 @@
 
     <!-- Simple lightbox css -->
     <link rel="stylesheet" href="css/simple-lightbox.min.css">
-
-    <!-- Nailthumb thumbnails generator css -->
-    <link rel="stylesheet" href="css/jquery.nailthumb.1.1.min.css">
-
 </head>
 
 <body>
@@ -53,7 +49,7 @@
 
     <header id="header" class="sticky-top">
         <nav class="main-navbar navbar navbar-expand-lg navbar-dark">
-            <div class="container-fluid px-5" style="background-color: var(--primary-bg-color); height: 100px;">
+            <div class="container-md" style="background-color: var(--primary-bg-color); width: 100%; height: 100px;">
                 <a class="navbar-brand" href="#">
                     <img src="assets/img/ojas-logo.png" height="125px" width="125px" alt="" />
                 </a>
@@ -62,7 +58,8 @@
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse p-3" id="navbarSupportedContent"
+                    style="background-color: var(--primary-bg-color);">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link active d-flex flex-column align-items-center" href="#">
@@ -74,7 +71,7 @@
                                 Events</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link d-flex flex-column align-items-center" href="#">
+                            <a class="nav-link d-flex flex-column align-items-center" href="pic-gallery.html">
                                 <i class="fa fa-images"></i>Gallery</a>
                         </li>
                         <li class="nav-item">
@@ -117,110 +114,138 @@
 
     <!-- Header ends here -->
 
-    <main class="my-2 mt-5">
+    <!-- Hero Starts Here  -->
+
+    <!-- <section id="hero">
+        <div class="container col-xxl-8 px-4 py-5">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                <div class="col-10 col-sm-8 col-lg-6">
+                    <img src="https://cdn.pixabay.com/photo/2020/01/21/20/44/mountains-4783955__340.jpg"
+                        class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="300"
+                        loading="lazy">
+                </div>
+                <div class="col-lg-6">
+                    <h1 class="display-5 fw-bold lh-1 mb-3">Responsive left-aligned hero with image</h1>
+                    <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the
+                        world’s most popular front-end open source toolkit, featuring Sass variables and mixins,
+                        responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                        <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
+                        <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Hero ends here -->
+
+    <main>
         <!-- main wide content starts here  -->
 
         <div class="main-wide-content container-fluid">
 
-            <!-- Home page gallery starts here -->
-            <section id="gallery-section">
+            <!-- Our Courses Section starts here -->
+            <section id="map-section">
+                <!-- <div class="section-top">
+                    <h3 class="heading">
+                        Locate us here
+                        <div class="heading-underline"></div>
+                    </h3>
+                </div> -->
+                <div class="section-body">
+                    <div class="contact-us-map">
+                        <iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=Shailee%20Theatre%20Kathmandu+(Shailee%20Theatre%20Location)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe> <a href='https://www.symptoma.ro/'>https://www.symptoma.ro</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=16dc5f73617ed8166188886185b8acec6fb92791'></script>
+                    </div>
+
+                </div>
+            </section>
+            <!-- Our Courses Section ends here -->
+
+            <div class="sizedBox"></div>
+
+            <!-- Contact us form starts here -->
+            <section id="contact-us-form">
                 <div class="section-top">
                     <h3 class="heading">
-                        Our Wonderful memories
+                        Contact Us Here
                         <div class="heading-underline"></div>
                     </h3>
                 </div>
-                <div id="pic-gallery-page" class="section-body pic-gallery-page">
-                    <div class="row mx-3">
-                        <!-- Gallery first column starts here -->
-                        <div class="col-md-3">
-                            <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(73).jpg"
-                                class="big" rel="row1">
-                                <div class="nailthumb-container mx-2">
-                                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(73).jpg"
-                                        alt="" title="Image 1">
+                <div class="section-body add-section-bg p-5">
+                    <div class="mx-5 contact">
+                        <div class="row">
+                            <div class="col-md-4" style="background: var(--primary-additional-color); align-self: center; border-radius: var(--primary-broder-radius)!important;">
+                                <div class="contact-info">
+                                    <img src="https://image.ibb.co/kUASdV/contact-image.png" alt="image"/>
+                                    <h2>Get in touch with Us</h2>
+                                    <!-- <h4 class="custom-font-bold" style="font-size: 18px;"><i class="fas fa-phone-alt" aria-hidden="true"></i> Phone: <span class="custom-font-regular">+977 9811111111</span> </h4> -->
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <h4 class="custom-font-bold" style="font-size: 18px;"><i class="fas fa-phone-alt" aria-hidden="true"></i> : </h4>
+                                        </div>
+                                        <div class="col-md-10">
+                                            <span class="custom-font-regular">+977 9811111111</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <h4 class="custom-font-bold" style="font-size: 18px;"><i class="fas fa-mobile" aria-hidden="true"></i> : </h4>
+                                        </div>
+                                        <div class="col-md-10">
+                                            <span class="custom-font-regular">+977 9811111111</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <h4 class="custom-font-bold" style="font-size: 18px;"><i class="fas fa-envelope" aria-hidden="true"></i> : </h4>
+                                        </div>
+                                        <div class="col-md-10">
+                                            <span class="custom-font-regular">contact@ojasfilms.com</span>
+                                        </div>
+                                    </div>
                                 </div>
-                            </a>
-
-                            <a href="https://mdbootstrap.com/img/Photos/Vertical/mountain1.jpg" class="big" rel="row2">
-                                <div class="nailthumb-container mx-2">
-                                    <img src="https://mdbootstrap.com/img/Photos/Vertical/mountain1.jpg" alt=""
-                                        title="Image 5">
+                            </div>
+                            <div class="col-md-1"></div>
+                            <div class="col-md-7">
+                                <div class="contact-form">
+                                    <div class="form-group">
+                                      <label class="control-label col-sm-2" for="fname">Name:</label>
+                                      <div class="col-sm-10">          
+                                        <input type="text" class="form-control" id="fname" placeholder="Please enter your full name" name="fname">
+                                      </div>
+                                    </div>
+                                    <div class="form-group">
+                                      <label class="control-label col-sm-2" for="phone">Phone:</label>
+                                      <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="lname" placeholder="Please enter your contact number" name="phone">
+                                      </div>
+                                    </div>
+                                    <div class="form-group">
+                                      <label class="control-label col-sm-2" for="email">Email:</label>
+                                      <div class="col-sm-10">
+                                        <input type="email" class="form-control" id="email" placeholder="Please enter your email" name="email">
+                                      </div>
+                                    </div>
+                                    <div class="form-group">
+                                      <label class="control-label col-sm-2" for="comment">Query:</label>
+                                      <div class="col-sm-10">
+                                        <textarea class="form-control" rows="5" id="comment"></textarea>
+                                      </div>
+                                    </div>
+                                    <div class="form-group">        
+                                      <div class="col-sm-offset-2 col-sm-10">
+                                        <button type="submit" class="btn form-submit-btn mt-2">Submit</button>
+                                      </div>
+                                    </div>
                                 </div>
-                            </a>
-                            
+                            </div>
                         </div>
-                        <!-- Gallery first column ends here -->
-
-                        <!-- Gallery second column starts here -->
-                        <div class="col-md-3">
-                            <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg"
-                                class="big" rel="row1">
-                                <div class="nailthumb-container mx-2">
-                                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg"
-                                        alt="" title="Image 2">
-                                </div>
-                            </a>
-
-                            <a href="https://mdbootstrap.com/img/Photos/Vertical/mountain1.jpg" class="big" rel="row2">
-                                <div class="nailthumb-container mx-2">
-                                    <img src="https://mdbootstrap.com/img/Photos/Vertical/mountain1.jpg" alt=""
-                                        title="Image 6">
-                                </div>
-                            </a>
-                        </div>
-                        <!-- Gallery second column ends here -->
-
-                        <!-- Gallery third column starts here -->
-                        <div class="col-md-3">
-                            <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg"
-                                class="big" rel="row1">
-                                <div class="nailthumb-container mx-2">
-                                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg"
-                                        alt="" title="Image 3">
-                                </div>
-                            </a>
-
-                            <a href="https://mdbootstrap.com/img/Photos/Vertical/mountain1.jpg" class="big" rel="row2">
-                                <div class="nailthumb-container mx-2">
-                                    <img src="https://mdbootstrap.com/img/Photos/Vertical/mountain1.jpg" alt=""
-                                        title="Image 7">
-                                </div>
-                            </a>
-
-                            <a href="https://mdbootstrap.com/img/Photos/Vertical/mountain1.jpg" class="big" rel="row2">
-                                <div class="nailthumb-container mx-2">
-                                    <img src="https://mdbootstrap.com/img/Photos/Vertical/mountain1.jpg" alt=""
-                                        title="Image 9">
-                                </div>
-                            </a>
-                        </div>
-                        
-                        <!-- Gallery third column ends here -->
-                        <!-- Gallery fourth column starts here -->
-                        <div class="col-md-3">
-                            <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg"
-                                class="big" rel="row1">
-                                <div class="nailthumb-container mx-2 square-thumb">
-                                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg"
-                                        alt="" title="Image 4">
-                                </div>
-                            </a>
-
-                            <a href="https://mdbootstrap.com/img/Photos/Vertical/mountain1.jpg" class="big" rel="row2">
-                                <div class="nailthumb-container mx-2 square-thumb">
-                                    <img src="https://mdbootstrap.com/img/Photos/Vertical/mountain1.jpg" alt=""
-                                        title="Image 8">
-                                </div>
-                            </a>
-                        </div>
-                        <!-- Gallery fourth column ends here -->
                     </div>
                 </div>
-
             </section>
-            <!-- Home page gallery ends here -->
 
+            <!-- Contact us form ends here -->
 
         </div>
 
@@ -410,14 +435,13 @@
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/26d4a64054.js"></script>
 
-    <!-- Nailthumb thumbnails generator js -->
-    <script src="js/jquery.nailthumb.1.1.min.js"></script>
 
     <!-- LightSlider Js -->
     <script src="js/lightslider.js"></script>
 
     <!-- Simple LightBox js -->
     <script src="js/simple-lightbox.jquery.min.js"></script>
+
 
     <!-- Custom Js -->
     <script src="js/script.js"></script>
