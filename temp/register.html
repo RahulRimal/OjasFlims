@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Ojas Flim Studio</title>
+
+    <link rel="icon" href="assets/img/ojas-logo.png" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- lightslider css -->
+    <link rel="stylesheet" href="css/lightslider.css" />
+
+    <!-- Simple lightbox css -->
+    <link rel="stylesheet" href="css/simple-lightbox.min.css">
+
+    <!-- Ckeditor Js -->
+    <script src="<?php echo BASE_URI; ?>templates/js/ckeditor/ckeditor.js"></script>
+
+</head>
+
+<body>
+    <!-- Top bar starts here  -->
+
+    <section id="top-bar">
+        <div class="container">
+            <div class="row">
+                <div class="top-bar-content d-flex justify-content-between justify-content-lg-between px-3 px-lg-0">
+                    <div class="topbar-mail">
+                        <p>mail@ojasflims.com</p>
+                    </div>
+                    <div class="topbar-links">
+                        <a href="#"><i class="fa fa-facebook-official pe-3" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-envelope pe-3" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top bar ends here  -->
+
+    <!-- Header starts here -->
+
+    <header id="header" class="sticky-top">
+        <nav class="main-navbar navbar navbar-expand-lg navbar-dark">
+            <div class="container-md" style="background-color: var(--primary-bg-color); width: 100%; height: 100px;">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/img/ojas-logo.png" height="125px" width="125px" alt="" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse p-3" id="navbarSupportedContent"
+                    style="background-color: var(--primary-bg-color);">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active d-flex flex-column align-items-center" href="#">
+                                <i class="fas fa-book-open" aria-hidden="true"></i>Courses</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex flex-column align-items-center" href="#">
+                                <i class="fa fa-trophy" aria-hidden="true"></i>Achivements and
+                                Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex flex-column align-items-center" href="pic-gallery.html">
+                                <i class="fa fa-images"></i>Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex flex-column align-items-center" href="#"><i
+                                    class="fa fa-headphones"></i>Contact Us</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle d-flex flex-column align-items-center" href="#"
+                                id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i
+                                    class="fa fa-graduation-cap"></i>New Admission
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Acting Course</a></li>
+                                <li><a class="dropdown-item" href="#">Direction Class</a></li>
+                                <li>
+                                    <hr class="dropdown-divider" />
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Upcoming Classes</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="form-inline d-flex d-md-flex" role="form">
+                        <div class="input-group">
+                            <input type="text" class="form-control shadow-none" placeholder="Search"
+                                aria-label="SearchHere" aria-describedby="basic-addon2" />
+                            <div class="input-group-append">
+                                <button class="search-btn btn" type="button">
+                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Header ends here -->
+
+    <!-- Hero Starts Here  -->
+
+    <!-- <section id="hero">
+        <div class="container col-xxl-8 px-4 py-5">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                <div class="col-10 col-sm-8 col-lg-6">
+                    <img src="https://cdn.pixabay.com/photo/2020/01/21/20/44/mountains-4783955__340.jpg"
+                        class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="300"
+                        loading="lazy">
+                </div>
+                <div class="col-lg-6">
+                    <h1 class="display-5 fw-bold lh-1 mb-3">Responsive left-aligned hero with image</h1>
+                    <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the
+                        world’s most popular front-end open source toolkit, featuring Sass variables and mixins,
+                        responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                        <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
+                        <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Hero ends here -->
+
+    <main>
+        <!-- main wide content starts here  -->
+
+        <div class="main-wide-content container-fluid">
+
+            <!-- Register section starts here -->
+            <section id="map-section">
+
+                <div class="section-body">
+
+                </div>
+            </section>
+
+            <section id="new-register-section" class="h-100 mt-5">
+                <div class="section-top">
+                    <h3 class="heading">
+                        Register for new Courses
+                        <!-- <div class="heading-underline"></div> -->
+                    </h3>
+                </div>
+                <div class="section-body">
+                    <div class="container h-100">
+                        <div class="row d-flex justify-content-center align-items-center h-100">
+                            <div class="col">
+                                <div class="card card-registration my-4">
+                                    <form id="register-form" action="#" method="post">
+                                    <div class="row g-0 pb-5">
+                                        <div class="col-xl-6 d-none d-xl-block">
+                                            <img src="https://cdn.pixabay.com/photo/2020/05/09/13/29/photographer-5149664_1280.jpg"
+                                                alt="Sample photo" class="img-fluid"
+                                                style="border-top-left-radius: .25rem; border-bottom-left-radius: .25rem;" />
+
+                                            <div class="registration-questions my-5">
+                                                <h4 class="text-center custom-font-bold">Other Details</h4>
+                                            </div>
+                                            <div class="imp-questions px-5">
+                                                <label class="pb-3  custom-font-bold" for="what-is-acting-for-you">What
+                                                    is acting for
+                                                    you?</label><br>
+                                                <textarea class="p-2 custom-text-area"
+                                                    name="what-is-acting-for-you-answer" cols="70" rows="10"></textarea>
+
+                                                <label class="pb-3 mt-5 custom-font-bold"
+                                                    for="what-is-acting-for-you">Why do you want to learn
+                                                    acting?</label><br>
+                                                <textarea class="p-2 custom-text-area"
+                                                    name="what-is-acting-for-you-answer" cols="70" rows="10"></textarea>
+
+                                                <label class="pb-3 mt-5 custom-font-bold"
+                                                    for="what-is-acting-for-you">Do you want any extra
+                                                    training?</label><br>
+                                                <textarea class="p-2 custom-text-area"
+                                                    placeholder="Example: Dance, Action, etc."
+                                                    name="what-is-acting-for-you-answer" cols="70" rows="10"></textarea>
+
+                                            </div>
+
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="card-body p-md-5 text-black">
+                                                <h3 class="mb-5 text-uppercase">Course registration form</h3>
+
+                                                <div class="row">
+                                                    <div class="col-md-6 mb-4">
+                                                        <div class="form-outline">
+                                                            <input required type="text" id="form3Example1m"
+                                                                class="form-control form-control-lg" />
+                                                            <label class="form-label" for="form3Example1m">First
+                                                                name</label>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="col-md-6 mb-4">
+                                                        <div class="form-outline">
+                                                            <input required type="text" id="form3Example1n"
+                                                                class="form-control form-control-lg" />
+                                                            <label class="form-label" for="form3Example1n">Last
+                                                                name</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="col-md-6 mb-4">
+                                                        <div class="form-outline">
+                                                            <input required type="text" id="form3Example1m1"
+                                                                class="form-control form-control-lg" />
+                                                            <label class="form-label" for="form3Example1m1">Mother's
+                                                                name</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 mb-4">
+                                                        <div class="form-outline">
+                                                            <input required type="text" id="form3Example1n1"
+                                                                class="form-control form-control-lg" />
+                                                            <label class="form-label" for="form3Example1n1">Father's
+                                                                name</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-outline mb-4">
+                                                    <input required type="text" id="form3Example1n1"
+                                                        class="form-control form-control-lg" />
+                                                    <label class="form-label" for="form3Example1n1">Gradn Father's
+                                                        name</label>
+                                                </div>
+
+                                                <div class="form-outline mb-4">
+                                                    <input required type="text" id="form3Example8"
+                                                        class="form-control form-control-lg" />
+                                                    <label class="form-label" for="form3Example8">Current
+                                                        Address</label>
+                                                </div>
+
+                                                <div class="form-outline mb-4">
+                                                    <input required type="text" id="form3Example8"
+                                                        class="form-control form-control-lg" />
+                                                    <label class="form-label" for="form3Example8">Permanent
+                                                        Address</label>
+                                                </div>
+
+                                                <div
+                                                    class="d-md-flex justify-content-start align-items-center mb-4 py-2">
+
+                                                    <h6 class="mb-0 me-4">Gender: </h6>
+
+                                                    <div class="form-check form-check-inline mb-0 me-4">
+                                                        <input class="form-check-input" type="radio"
+                                                            name="inlineRadioOptions" id="femaleGender"
+                                                            value="option1" />
+                                                        <label class="form-check-label"
+                                                            for="femaleGender">Female</label>
+                                                    </div>
+
+                                                    <div class="form-check form-check-inline mb-0 me-4">
+                                                        <input class="form-check-input" type="radio"
+                                                            name="inlineRadioOptions" id="maleGender" value="option2" />
+                                                        <label class="form-check-label" for="maleGender">Male</label>
+                                                    </div>
+
+                                                    <div class="form-check form-check-inline mb-0">
+                                                        <input class="form-check-input" type="radio"
+                                                            name="inlineRadioOptions" id="otherGender"
+                                                            value="option3" />
+                                                        <label class="form-check-label" for="otherGender">Other</label>
+                                                    </div>
+
+                                                </div>
+                                                
+                                                <div class="form-outline mb-4">
+                                                    <input required type="date" id="form3Example9"
+                                                        class="form-control form-control-lg" />
+                                                    <label class="form-label" for="form3Example9">DOB</label>
+                                                </div>
+
+                                                <div class="form-outline mb-4">
+                                                    <input type="tel" id="form3Example90"
+                                                        class="form-control form-control-lg" />
+                                                    <label class="form-label" for="form3Example90">Phone</label>
+                                                </div>
+
+                                                <div class="form-outline mb-4">
+                                                    <input required type="text" id="form3Example97"
+                                                        class="form-control form-control-lg" />
+                                                    <label class="form-label" for="form3Example97">Email ID</label>
+                                                </div>
+
+                                                <div class="form-outline mb-4">
+                                                    <input required type="text" id="form3Example99"
+                                                        class="form-control form-control-lg" />
+                                                    <label class="form-label" for="form3Example99">Academic
+                                                        Qualification</label>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="col-md-5 mb-4">
+                                                        <div class="form-outline">
+                                                            <!-- <input required type="text" id="form3Example99"
+                                                                class="form-control form-control-lg" /> -->
+                                                            <select class="form-select" name="" id="">
+                                                                <option value="">Acting</option>
+                                                                <option value="">Direction</option>
+                                                                <option value="">Script Writing</option>
+                                                                <option value="">Editing</option>
+                                                                <option value="">Public Speaking</option>
+                                                                <option value="">Modeling</option>
+                                                                <option value="">Producer</option>
+                                                                <option value="">Singing</option>
+                                                                <option value="">Dancing</option>
+                                                                <option value="">Action</option>
+                                                            </select>
+                                                            <label class="form-label"
+                                                                for="form3Example99">Course</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-7 mb-4">
+                                                        <div class="form-outline">
+                                                            <!-- <input required type="text" id="form3Example99"
+                                                                class="form-control form-control-lg" /> -->
+
+                                                            <select class="form-select" name="" id="">
+                                                                <option value="">3 Months</option>
+                                                                <option value="">6 Months</option>
+                                                                <option value="">12 Months</option>
+                                                                <option value="">15 Months</option>
+                                                                <option value="">18 Months</option>
+                                                                <option value="">24 Months</option>
+                                                            </select>
+                                                            <label class="form-label" for="form3Example99">Preferred
+                                                                Course Duration</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-outline mb-4">
+                                                    <input required type="text" id="form3Example99"
+                                                        class="form-control form-control-lg" />
+                                                    <label class="form-label" for="form3Example99">Preferred Class
+                                                        time</label>
+                                                </div>
+
+                                                <div class="form-outline mb-4">
+                                                    <input required type="text" id="form3Example99"
+                                                        class="form-control form-control-lg" />
+                                                    <label class="form-label" for="form3Example99">Languages
+                                                        known</label>
+                                                </div>
+
+                                                <div class="form-outline mb-4">
+                                                    <input required type="text" id="form3Example97"
+                                                        class="form-control form-control-lg" />
+                                                    <label class="form-label" for="form3Example97">Marital
+                                                        Status</label>
+                                                </div>
+
+                                                <div class="form-outline mb-4">
+                                                    <input required type="text" id="form3Example97"
+                                                        class="form-control form-control-lg" />
+                                                    <label class="form-label" for="form3Example97">Name of next to
+                                                        kin (to contact in emergency)</label>
+                                                </div>
+
+                                                <!-- <div class="d-flex justify-content-end pt-3">
+                                                    <button type="button" class="btn btn-light btn-lg">Reset
+                                                        all</button> -->
+                                                <button type="submit" class="btn form-submit-btn">Request for
+                                                    Regestration</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </form>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        </section>
+
+        <!-- Register section ends here -->
+
+        <div class="sizedBox"></div>
+
+        </div>
+
+        <!-- main wide content ends here  -->
+
+        <!-- main narrow content starts here  -->
+
+        <div class="main-content container mt-5"></div>
+
+        <!-- main narrow content ends here  -->
+    </main>
+    <!-- Footer starts here -->
+
+    <footer id="footer">
+        <!-- footer newsletter starts here  -->
+        <div class="footer-newsletter d-flex justify-content-center text-center mt-5">
+            <div class="container col-lg-5">
+                <div class="newsletter-heading">
+                    <h3>Join Our Newsletter</h3>
+                </div>
+                <div class="newsletter-body">
+                    <h5>Subscribe now to get exciting offers and latest news!!</h5>
+                </div>
+                <div class="newsletter-form">
+                    <form action="post">
+                        <input class="p-1 ps-3" type="email" name="newEmail" id="newsletter-input"
+                            placeholder="Enter your email here" />
+                        <button class="btn btn-sm" type="submit">
+                            <strong>Subscribe</strong>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- footer newsletter ends here  -->
+
+        <!-- footer top starts here  -->
+
+        <div class="footer-top mt-5 p-4 bg-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4">
+                        <div class="footer-widget">
+                            <div class="text-left">
+                                <div class="widget-heading">
+                                    <h3 style="color: var(--primary-color); font-weight: bold;">Ojas Flims</h3>
+                                </div>
+                                <div class="widget-body">
+                                    <p>
+                                        Ratopul, Kathmandu <br />Nepal <br /><strong>Phone: </strong>+977 9873645738
+                                        <br /><strong>Email:</strong>
+                                        mail@ojasflims.com
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4">
+                        <div class="footer-widget">
+                            <div class="text-left">
+                                <div class="widget-heading">
+                                    <h3>Useful Links</h3>
+                                </div>
+                                <div class="widget-body">
+                                    <ul class="p-0">
+                                        <li class="d-flex align-items-center">
+                                            <i style="font-size: 12px; margin-right: 5px" class="fa fa-arrow-right"
+                                                aria-hidden="true">
+                                            </i>
+                                            <a href="#">Home</a>
+                                        </li>
+                                        <li class="d-flex align-items-center">
+                                            <i style="font-size: 12px; margin-right: 5px" class="fa fa-arrow-right"
+                                                aria-hidden="true">
+                                            </i>
+                                            <a href="#">AboutUs</a>
+                                        </li>
+                                        <li class="d-flex align-items-center">
+                                            <i style="font-size: 12px; margin-right: 5px" class="fa fa-arrow-right"
+                                                aria-hidden="true">
+                                            </i>
+                                            <a href="#">Contact Us</a>
+                                        </li>
+                                        <li class="d-flex align-items-center">
+                                            <i style="font-size: 12px; margin-right: 5px" class="fa fa-arrow-right"
+                                                aria-hidden="true">
+                                            </i>
+                                            <a href="#">Our Team</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4">
+                        <div class="footer-widget">
+                            <div class="text-left">
+                                <div class="widget-heading">
+                                    <h3>ShareLearning</h3>
+                                </div>
+                                <div class="widget-body">
+                                    <p>
+                                        Ratopul, Kathmandu <br />Nepal <br /><strong>Phone: </strong>+977 9873645738
+                                        <br /><strong>Email:</strong>
+                                        mail@ojasflims.com
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4">
+                        <div class="footer-widget">
+                            <div class="text-left">
+                                <div class="widget-heading">
+                                    <h3>Catch Us Here</h3>
+                                </div>
+                                <div class="widget-body">
+                                    <ul class="d-flex justify-content-start">
+                                        <li>
+                                            <a href="#"><i style="font-size: 30px" class="fa fa-facebook-official pe-3"
+                                                    aria-hidden="true"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i style="font-size: 30px" class="fa fa-twitter pe-3"
+                                                    aria-hidden="true"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i style="font-size: 30px" class="fa fa-instagram"
+                                                    aria-hidden="true"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer top ends here  -->
+
+        <!-- Footer bottom starts here  -->
+
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <div class="footer-copyright">
+                            <p class="m-0">
+                                <span>&copy;</span> Copyright |
+                                <script>
+                                    document.write(new Date().getFullYear());
+                                </script>
+                                |
+                                <strong>Ojas Flims</strong>. All Rights Reserved
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 text-center text-md-end">
+                        <div class="footer-credit">
+                            <p class="m-0">
+                                By <strong>genuinetechnology</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer bottom ends here  -->
+    </footer>
+
+    <!-- Footer ends here -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/26d4a64054.js"></script>
+
+
+    <!-- LightSlider Js -->
+    <script src="js/lightslider.js"></script>
+
+    <!-- Simple LightBox js -->
+    <script src="js/simple-lightbox.jquery.min.js"></script>
+
+
+    <!-- Custom Js -->
+    <script src="js/script.js"></script>
+
+
+</body>
+
+</html>
