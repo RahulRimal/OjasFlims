@@ -1,151 +1,447 @@
-// function showDropdownMenu(dropToggler) {
-//   toggler = document.getElementById(dropToggler.id);
-//   menu = toggler.nextElementSibling;
-//   menu.classList.add("show");
-// }
+// Important function for dropdown on hover instead of click starts here
 
-// function hideDropdownMenu(dropToggler) {
-//   toggler = document.getElementById(dropToggler.id);
-//   menu = toggler.nextElementSibling;
-//   if (menu.classList.contains("show")) {
-//     menu.classList.remove("show");
-//   }
-// }
-
-// function showDateInHTMLCalender()
-// {
-//     calender = document.getElementsByClassName('htmlCalender');
-//     todayDate = Date.now();
-//     console.log(todayDate);
-// }
-
-// Show-Hide Add posts forms tabs starts here
-
-function showHideFormTabs(thisButton) {
-  buyFormButton = document.getElementById("buy-form-button");
-  sellFormButton = document.getElementById("sell-form-button");
-
-  sellTitle = "Sell Your Book";
-  buyTitle = "Buy A Book";
-
-  sellForm = document.getElementById("addOnSaleForm");
-  buyForm = document.getElementById("addBuyingForm");
-
-  formTitle = document.getElementById("sell-buy-form-title");
-
-  if (thisButton === buyFormButton) {
-    if (thisButton.classList.contains("sell-buy-button-inactive")) {
-      thisButton.classList.toggle("sell-buy-button-inactive");
-      thisButton.classList.toggle("sell-buy-button-active");
-
-      sellFormButton.classList.toggle("sell-buy-button-inactive");
-      sellFormButton.classList.toggle("sell-buy-button-active");
-
-      formTitle.innerText = buyTitle;
-
-      if(buyForm.classList.contains('d-none'))
-      {
-        buyForm.classList.add("d-block");
-        buyForm.classList.remove("d-none");
-        sellForm.classList.remove("d-block");
-        sellForm.classList.add("d-none");
-      }
-      
-    }
-  } else {
-    if (thisButton.classList.contains("sell-buy-button-inactive")) {
-      thisButton.classList.toggle("sell-buy-button-inactive");
-      thisButton.classList.toggle("sell-buy-button-active");
-
-      buyFormButton.classList.toggle("sell-buy-button-inactive");
-      buyFormButton.classList.toggle("sell-buy-button-active");
-
-      formTitle.innerText = sellTitle;
-
-      if(sellForm.classList.contains('d-none'))
-      {
-        sellForm.classList.add("d-block");
-        sellForm.classList.remove("d-none");
-        buyForm.classList.remove("d-block");
-        buyForm.classList.add("d-none");
-      }
-    }
-  }
-}
-
-// Show-Hide Add posts forms tabs ends here
-
-// LightSlider Section for add-post-pics Starts here
 
 $(document).ready(function () {
-  $("#sellBookPostPics").lightSlider({
-    item: 3,
-    autoWidth: true,
-    slideMove: 1, // slidemove will be 1 if loop is true
-    slideMargin: 10,
+  $('.dropdown-toggle').mouseover(function() {
+      $('.dropdown-menu').show();
+  })
 
-    addClass: "",
-    mode: "slide",
-    useCSS: true,
-    cssEasing: "ease", //'cubic-bezier(0.25, 0, 0.25, 1)',//
-    easing: "linear", //'for jquery animation',////
+  $('.dropdown-toggle').mouseout(function() {
+      t = setTimeout(function() {
+          $('.dropdown-menu').hide();
+      }, 100);
 
-    speed: 400, //ms'
-    auto: true,
-    loop: true,
-    slideEndAnimation: true,
-    pause: 5000,
+      $('.dropdown-menu').on('mouseenter', function() {
+          $('.dropdown-menu').show();
+          clearTimeout(t);
+      }).on('mouseleave', function() {
+          $('.dropdown-menu').hide();
+      })
+  })
+})
 
-    keyPress: false,
-    controls: true,
-    prevHtml: "",
-    nextHtml: "",
+// Important function for dropdown on hover instead of click ends here
 
-    rtl: false,
-    adaptiveHeight: false,
 
-    vertical: false,
-    verticalHeight: 500,
-    vThumbWidth: 100,
 
-    thumbItem: 10,
-    pager: true,
-    gallery: false,
-    galleryMargin: 5,
-    thumbMargin: 5,
-    currentPagerPosition: "middle",
+// LightSlider Section for main carousel Starts here
 
-    enableTouch: true,
-    enableDrag: true,
-    freeMove: true,
-    swipeThreshold: 40,
+$(document).ready(function() {
+  $("#lightSlider-main-carousel").lightSlider({
+      item: 1,
+      autoWidth: false,
+      slideMove: 1, // slidemove will be 1 if loop is true
+      slideMargin: 10,
 
-    responsive: [],
+      addClass: '',
+      mode: "slide",
+      useCSS: true,
+      cssEasing: 'ease', //'cubic-bezier(0.25, 0, 0.25, 1)',//
+      easing: 'linear', //'for jquery animation',////
 
-    onBeforeStart: function (el) {},
-    onSliderLoad: function (el) {
-      $("#sellBookPostPics").removeClass("cs-hidden");
-    },
-    onBeforeSlide: function (el) {},
-    onAfterSlide: function (el) {},
-    onBeforeNextSlide: function (el) {},
-    onBeforePrevSlide: function (el) {},
+      speed: 900, //ms'
+      auto: true,
+      loop: true,
+      pauseOnHover: true,
+      slideEndAnimation: true,
+      pause: 2500,
+
+      keyPress: true,
+      controls: true,
+      prevHtml: '<i class="fas fa-chevron-circle-left" style="font-size: 30px; color: white;" aria-hidden="true"></i>',
+      nextHtml: '<i class="fas fa-chevron-circle-right" style="font-size: 30px; color: white;" aria-hidden="true"></i>',
+
+      rtl:false,
+      adaptiveHeight:false,
+
+      vertical:false,
+      verticalHeight:500,
+      vThumbWidth:100,
+
+      thumbItem:10,
+      pager: false,
+      gallery: false,
+      galleryMargin: 5,
+      thumbMargin: 5,
+      currentPagerPosition: 'middle',
+
+      enableTouch:true,
+      enableDrag:true,
+      freeMove:true,
+      swipeThreshold: 40,
+
+      responsive : [],
+
+      onBeforeStart: function (el) {},
+      onSliderLoad: function (el) {},
+      onBeforeSlide: function (el) {},
+      onAfterSlide: function (el) {},
+      onBeforeNextSlide: function (el) {},
+      onBeforePrevSlide: function (el) {}
   });
 });
 
-// LightSlider Section for add-post-pics ends here
+// LightSlider Section for carousel ends here
 
 
-// Alert box show/hide starts here 
+// LightSlider for courses section Starts here
 
-// Header Alert starts here
+$(document).ready(function() {
+  $("#course-section").lightSlider({
+      item: 3,
+      autoWidth: false,
+      slideMove: 1, // slidemove will be 1 if loop is true
+      slideMargin: 10,
 
-$(document).ready(function () {
-  $(".custom-alert").fadeTo(2000, 500).slideUp(500, function(){
-    $(".custom-alert").slideUp(500);
+      addClass: '',
+      mode: "slide",
+      useCSS: true,
+      cssEasing: 'ease', //'cubic-bezier(0.25, 0, 0.25, 1)',//
+      easing: 'linear', //'for jquery animation',////
+
+      speed: 900, //ms'
+      auto: true,
+      loop: true,
+      pauseOnHover: false,
+      slideEndAnimation: true,
+      pause: 2000,
+
+      keyPress: false,
+      controls: true,
+      // prevHtml: '<i class="fas fa-chevron-circle-left" style="font-size: 30px; color: black;" aria-hidden="true"></i>',
+      // nextHtml: '<i class="fas fa-chevron-circle-right" style="font-size: 30px; color: black;" aria-hidden="true"></i>',
+      nextHtml: '',
+      prevHtml: '',
+
+      rtl:false,
+      adaptiveHeight:false,
+
+      vertical:false,
+      verticalHeight:500,
+      vThumbWidth:100,
+
+      thumbItem:10, 
+      pager: true,
+      gallery: false,
+      galleryMargin: 5,
+      thumbMargin: 5,
+      currentPagerPosition: 'middle',
+
+      enableTouch:true,
+      enableDrag:true,
+      freeMove:true,
+      swipeThreshold: 40,
+
+      responsive : [
+        {
+          breakpoint: 480,
+          settings:{
+            item: 1,
+          }
+        }
+      ],
+
+      onBeforeStart: function (el) {},
+      onSliderLoad: function (el) {},
+      onBeforeSlide: function (el) {},
+      onAfterSlide: function (el) {},
+      onBeforeNextSlide: function (el) {},
+      onBeforePrevSlide: function (el) {}
   });
 });
 
-// Header Alert ends here
+// LightSlider for courses section ends here
 
-// Alert box show/hide ends here 
+
+
+// LightSlider for our team section Starts here
+
+$(document).ready(function() {
+  $("#our-team-carousel").lightSlider({
+      item: 4,
+      autoWidth: false,
+      slideMove: 1, // slidemove will be 1 if loop is true
+      slideMargin: 50,
+
+      addClass: '',
+      mode: "slide",
+      useCSS: true,
+      cssEasing: 'ease', //'cubic-bezier(0.25, 0, 0.25, 1)',//
+      easing: 'linear', //'for jquery animation',////
+
+      speed: 900, //ms'
+      auto: false,
+      loop: true,
+      pauseOnHover: false,
+      slideEndAnimation: true,
+      pause: 2000,
+
+      keyPress: false,
+      controls: true,
+      prevHtml: '<i class="fas fa-chevron-circle-left" style="font-size: 30px; color: black;" aria-hidden="true"></i>',
+      nextHtml: '<i class="fas fa-chevron-circle-right" style="font-size: 30px; color: black;" aria-hidden="true"></i>',
+
+      rtl:false,
+      adaptiveHeight:false,
+
+      vertical:false,
+      verticalHeight:500,
+      vThumbWidth:100,
+
+      thumbItem:10, 
+      pager: true,
+      gallery: false,
+      galleryMargin: 5,
+      thumbMargin: 5,
+      currentPagerPosition: 'middle',
+
+      enableTouch:true,
+      enableDrag:true,
+      freeMove:true,
+      swipeThreshold: 40,
+
+      responsive : [
+        {
+          breakpoint: 480,
+          settings:{
+            item: 1,
+          }
+        }
+      ],
+
+      onBeforeStart: function (el) {},
+      onSliderLoad: function (el) {},
+      onBeforeSlide: function (el) {},
+      onAfterSlide: function (el) {},
+      onBeforeNextSlide: function (el) {},
+      onBeforePrevSlide: function (el) {}
+  });
+});
+
+// LightSlider for our team section ends here
+
+// LightSlider for home page artist pool carousel Starts here
+
+$(document).ready(function() {
+  $("#home-page-artist-pool-carousel").lightSlider({
+      item: 4,
+      autoWidth: false,
+      slideMove: 1, // slidemove will be 1 if loop is true
+      slideMargin: 10,
+
+      addClass: '',
+      mode: "slide",
+      useCSS: true,
+      cssEasing: 'ease', //'cubic-bezier(0.25, 0, 0.25, 1)',//
+      easing: 'linear', //'for jquery animation',////
+
+      speed: 900, //ms'
+      auto: true,
+      loop: true,
+      pauseOnHover: true,
+      slideEndAnimation: true,
+      pause: 1500,
+
+      keyPress: true,
+      controls: true,
+      prevHtml: '<i class="fas fa-chevron-circle-left" style="font-size: 30px; color: white;" aria-hidden="true"></i>',
+      nextHtml: '<i class="fas fa-chevron-circle-right" style="font-size: 30px; color: white;" aria-hidden="true"></i>',
+
+      rtl:false,
+      adaptiveHeight:false,
+
+      vertical:false,
+      verticalHeight:500,
+      vThumbWidth:100,
+
+      thumbItem:10,
+      pager: false,
+      gallery: false,
+      galleryMargin: 5,
+      thumbMargin: 5,
+      currentPagerPosition: 'middle',
+
+      enableTouch:true,
+      enableDrag:true,
+      freeMove:true,
+      swipeThreshold: 40,
+
+      responsive : [],
+
+      onBeforeStart: function (el) {},
+      onSliderLoad: function (el) {},
+      onBeforeSlide: function (el) {},
+      onAfterSlide: function (el) {},
+      onBeforeNextSlide: function (el) {},
+      onBeforePrevSlide: function (el) {}
+  });
+});
+
+// LightSlider for home page artist pool carousel ends here
+
+
+
+// LightSlider for home page artist pool single Starts here
+
+$(document).ready(function() {
+  $(".lightSlider-artist-pool-carousel").lightSlider({
+      item: 1,
+      autoWidth: false,
+      slideMove: 1, // slidemove will be 1 if loop is true
+      slideMargin: 10,
+
+      addClass: '',
+      mode: "slide",
+      useCSS: true,
+      cssEasing: 'ease', //'cubic-bezier(0.25, 0, 0.25, 1)',//
+      easing: 'linear', //'for jquery animation',////
+      mode: 'fade',
+
+      speed: 900, //ms'
+      auto: true,
+      loop: true,
+      pauseOnHover: true,
+      slideEndAnimation: true,
+      pause: 1500,
+
+      keyPress: true,
+      controls: false,
+      prevHtml: '<i class="fas fa-chevron-circle-left" style="font-size: 30px; color: white;" aria-hidden="true"></i>',
+      nextHtml: '<i class="fas fa-chevron-circle-right" style="font-size: 30px; color: white;" aria-hidden="true"></i>',
+
+      rtl:false,
+      adaptiveHeight:false,
+
+      vertical:false,
+      verticalHeight:500,
+      vThumbWidth:100,
+
+      thumbItem:10,
+      pager: false,
+      gallery: false,
+      galleryMargin: 5,
+      thumbMargin: 5,
+      currentPagerPosition: 'middle',
+
+      enableTouch:true,
+      enableDrag:true,
+      freeMove:true,
+      swipeThreshold: 40,
+
+      responsive : [],
+
+      onBeforeStart: function (el) {},
+      onSliderLoad: function (el) {},
+      onBeforeSlide: function (el) {},
+      onAfterSlide: function (el) {},
+      onBeforeNextSlide: function (el) {},
+      onBeforePrevSlide: function (el) {}
+  });
+});
+
+// LightSlider for home page artist pool single Ends here
+
+
+
+// LightSlider for our client feedback section Starts here
+
+$(document).ready(function() {
+  $("#client-feedback-carousel").lightSlider({
+      item: 1,
+      autoWidth: false,
+      slideMove: 1, // slidemove will be 1 if loop is true
+      slideMargin: 50,
+
+      addClass: '',
+      mode: "slide",
+      useCSS: true,
+      cssEasing: 'ease', //'cubic-bezier(0.25, 0, 0.25, 1)',//
+      easing: 'linear', //'for jquery animation',////
+
+      speed: 900, //ms'
+      auto: true,
+      loop: true,
+      pauseOnHover: false,
+      slideEndAnimation: true,
+      pause: 2000,
+
+      keyPress: false,
+      controls: true,
+      prevHtml: '<i class="fas fa-chevron-circle-left" style="font-size: 30px; color: black;" aria-hidden="true"></i>',
+      nextHtml: '<i class="fas fa-chevron-circle-right" style="font-size: 30px; color: black;" aria-hidden="true"></i>',
+
+      rtl:false,
+      adaptiveHeight:false,
+
+      vertical:false,
+      verticalHeight:500,
+      vThumbWidth:100,
+
+      thumbItem:10, 
+      pager: false,
+      gallery: false,
+      galleryMargin: 5,
+      thumbMargin: 5,
+      currentPagerPosition: 'middle',
+
+      enableTouch:true,
+      enableDrag:true,
+      freeMove:true,
+      swipeThreshold: 40,
+
+      responsive : [
+        {
+          breakpoint: 480,
+          settings:{
+            item: 1,
+          }
+        }
+      ],
+
+      onBeforeStart: function (el) {},
+      onSliderLoad: function (el) {},
+      onBeforeSlide: function (el) {},
+      onAfterSlide: function (el) {},
+      onBeforeNextSlide: function (el) {},
+      onBeforePrevSlide: function (el) {}
+  });
+});
+
+// LightSlider for our client feedback section ends here
+
+
+// Home page simple-lightbox gallery starts here
+
+
+
+// Home page simple-lightbox gallery ends here
+
+
+
+
+
+
+// Pic gallery page starts here
+
+$(document).ready(function(){
+  $('.nailthumb-container').nailthumb({
+    // width:300, height:300,
+    method:'resize',
+    // fitDirection: 'bottom center',
+});
+});
+
+$('.pic-gallery-page a').simpleLightbox();
+
+// simple-lightbox gallery starts here
+
+
+// simple-lightbox gallery ends here
+
+
+
+
+// Pic gallery page ends here
+
+
+

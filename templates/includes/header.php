@@ -2,40 +2,45 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Sabaeko Books</title>
+    <title>Ojas Flim Studio</title>
+
+    <link rel="icon" href="<?php echo BASE_URI;?>assets/img/ojas-logo.png" />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="<?php echo BASE_URI; ?>templates/css/boot/bootstrap.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
     <!-- Custom Css -->
-    <link rel="stylesheet" href="<?php echo BASE_URI; ?>templates/css/style.css">
+    <link rel="stylesheet" href="<?php echo BASE_URI;?>/templates/css/style.css" />
 
     <!-- lightslider css -->
-    <link rel="stylesheet" href="<?php echo BASE_URI; ?>templates/css/lightslider.css">
+    <link rel="stylesheet" href="<?php echo BASE_URI;?>/templates/css/lightslider.css" />
+
+    <!-- Simple lightbox css -->
+    <link rel="stylesheet" href="<?php echo BASE_URI;?>/templates/css/simple-lightbox.min.css">
 
     <!-- Ckeditor Js -->
-    <script src="<?php echo BASE_URI; ?>templates/js/ckeditor/ckeditor.js"></script>
+    <script src="<?php echo BASE_URI;?>templates/js/ckeditor/ckeditor.js"></script>
 
 </head>
 
 <body>
-
     <!-- Top bar starts here  -->
 
     <section id="top-bar">
         <div class="container">
             <div class="row">
-                <div class="top-bar-content d-flex justify-content-between justify-content-lg-around px-5 px-lg-0">
+                <div class="top-bar-content d-flex justify-content-between justify-content-lg-between px-3 px-lg-0">
                     <div class="topbar-mail">
-                        <p>Krishna@mail.com</p>
+                        <p>mail@ojasflims.com</p>
                     </div>
                     <div class="topbar-links">
-                        <i class="fa fa-facebook" aria-hidden="true"></i>
-                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <a href="#"><i class="fa fa-facebook-official pe-3" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-envelope pe-3" aria-hidden="true"></i></a>
                     </div>
                 </div>
             </div>
@@ -47,122 +52,68 @@
     <!-- Header starts here -->
 
     <header id="header" class="sticky-top">
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="container d-flex justify-content-between">
-                <div class=" d-flex align-items-center">
-                    <a class="navbar-brand" href="<?php echo BASE_URI; ?>">Sabaeko Books</a>
-                    <form class="form-inline d-none d-md-flex" role="form">
+        <nav class="main-navbar navbar navbar-expand-lg navbar-dark">
+            <div class="container-md" style="background-color: var(--primary-bg-color); width: 100%; height: 100px;">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/img/ojas-logo.png" height="125px" width="125px" alt="" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse p-3" id="navbarSupportedContent"
+                    style="background-color: var(--primary-bg-color);">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active d-flex flex-column align-items-center" href="#">
+                                <i class="fas fa-book-open" aria-hidden="true"></i>Courses</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex flex-column align-items-center" href="#">
+                                <i class="fa fa-trophy" aria-hidden="true"></i>Achivements and
+                                Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex flex-column align-items-center" href="pic-gallery.html">
+                                <i class="fa fa-images"></i>Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex flex-column align-items-center" href="#"><i
+                                    class="fa fa-headphones"></i>Contact Us</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle d-flex flex-column align-items-center" href="#"
+                                id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i
+                                    class="fa fa-graduation-cap"></i>New Admission
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Acting Course</a></li>
+                                <li><a class="dropdown-item" href="#">Direction Class</a></li>
+                                <li>
+                                    <hr class="dropdown-divider" />
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Upcoming Classes</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="form-inline d-flex d-md-flex" role="form">
                         <div class="input-group">
-                            <input type="text" class="form-control shadow-none" placeholder="Search" aria-label="SearchHere" aria-describedby="basic-addon2">
+                            <input type="text" class="form-control shadow-none" placeholder="Search"
+                                aria-label="SearchHere" aria-describedby="basic-addon2" />
                             <div class="input-group-append">
-                                <button class="btn btn-light" type="button">
-                                    <i class="fa fa-search text-danger" aria-hidden="true"></i>
+                                <button class="search-btn btn" type="button">
+                                    <i class="fa fa-search" aria-hidden="true"></i>
                                 </button>
                             </div>
                         </div>
                     </form>
                 </div>
-                <? //php if (isLoggedIn()) : 
-                ?>
-                <!-- <div class="user-profile d-flex d-md-none">
-                        <div class="nav-item dropdown d-flex align-items-center">
-                            <img class="nav-link circle-avatar-icon p-1" src="<? //php echo BASE_URI 
-                                                                                ?>images/<? //php echo currentUserInfo($_SESSION['user_id'])->picture; 
-                                                                                                                ?>" alt="">
-                            <a class="nav-link active dropdown-toggle d-flex align-items-center text-light p-0" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><? //php echo currentUserInfo($_SESSION['user_id'])->firstName; 
-                                                                                                                                                                                                            ?>
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">CSIT</a></li>
-                                <li><a class="dropdown-item" href="#">BCA</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">BIT</a></li>
-                            </ul>
-                        </div>
-
-                    </div> -->
-
-                <? //php endif; 
-                ?>
-
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-around" id="navbarSupportedContent">
-                    <ul class="navbar-nav mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active d-flex flex-column align-items-center" href="<?php echo BASE_URI; ?>"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link d-flex flex-column align-items-center" href="all-posts.php?user=<?php echo $_SESSION['user_id']; ?>"> <i class="fa fa-shopping-cart" aria-hidden="true"></i>My Books</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link d-flex flex-column align-items-center" href="#"> <i class="fas fa-comment-dots"></i>Messages</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link d-flex flex-column align-items-center" href="#"><i class="fas fa-bolt"></i>Notifications</a>
-                        </li>
-
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle d-flex flex-column align-items-center" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-book-open"></i>Classwise
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">CSIT</a></li>
-                                <li><a class="dropdown-item" href="#">BCA</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">BIT</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <form class="form-inline d-flex d-md-none align-items-center my-2 my-lg-0">
-                        <input style="height: 40px;" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-info my-2 my-sm-0" type="submit">Search</button>
-                    </form>
-                    <ul class="navbar-nav mb-2 mt-2 mb-lg-0">
-                        <?php if (!isLoggedIn()) : ?>
-                            <div class="login-signup d-flex align-items-center">
-                                <li class="nav-item">
-                                    <a class="nav-link me-2" href="#">LogIn</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="btn btn-light">SignUp</a>
-                                </li>
-                            </div>
-                        <?php else : ?>
-                            <div class="logout-form d-lg-block d-md-none">
-                                <form action="logout.php" method="post">
-                                    <button type="submit" name="doLogout" class="btn btn-primary w-100 h6">LogOut</button>
-                                </form>
-                            </div>
-                            <div class="user-profile d-lg-flex d-md-none">
-                                <div class="nav-item dropdown d-flex align-items-center">
-                                    <img class="nav-link circle-avatar-icon p-1" src="<?php echo BASE_URI ?>images/<?php echo currentUserInfo($_SESSION['user_id'])->picture; ?>" alt="">
-                                    <a class="nav-link active dropdown-toggle d-flex align-items-center text-light p-0" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><?php echo currentUserInfo($_SESSION['user_id'])->firstName; ?>
-                                    </a>
-                                    <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                        <li><a class="dropdown-item" href="#">CSIT</a></li>
-                                        <li><a class="dropdown-item" href="#">BCA</a></li>
-                                        <li>
-                                            <hr class="dropdown-divider">
-                                        </li>
-                                        <li><a class="dropdown-item" href="#">BIT</a></li>
-                                    </ul>
-                                </div>
-
-                            </div>
-                        <?php endif; ?>
-                </div>
-                </ul>
-            </div>
             </div>
         </nav>
-
-        <?php displayMessage(); ?>
-
     </header>
 
     <!-- Header ends here -->
