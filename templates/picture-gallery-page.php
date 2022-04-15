@@ -14,76 +14,48 @@
                 </h3>
             </div>
             <div id="pic-gallery-page" class="section-body pic-gallery-page">
-                <div class="row mx-3">
+                <div>
                     <!-- Gallery first column starts here -->
-                    <div class="col-md-3">
-                        <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(73).jpg" class="big" rel="row1">
-                            <div class="nailthumb-container mx-2">
-                                <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(73).jpg" alt="" title="Image 1">
+                    <div class="d-flex flex-row">
+                        <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(73).jpg" class="m-1" rel="">
+                            <div class="mx-2 square-thumb">
+                                <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(73).jpg" alt="" title="Image 1" class="w-100">
                             </div>
                         </a>
 
-                        <a href="https://mdbootstrap.com/img/Photos/Vertical/mountain1.jpg" class="big" rel="row2">
-                            <div class="nailthumb-container mx-2">
-                                <img src="https://mdbootstrap.com/img/Photos/Vertical/mountain1.jpg" alt="" title="Image 5">
+                        <a href="https://cdn.pixabay.com/photo/2022/01/30/15/01/girl-6981336_960_720.jpg" class="m-1" rel="">
+                            <div class="mx-2 square-thumb">
+                                <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(73).jpg" alt="" title="Image 1" class="w-100">
                             </div>
                         </a>
 
-                    </div>
-                    <!-- Gallery first column ends here -->
-
-                    <!-- Gallery second column starts here -->
-                    <div class="col-md-3">
-                        <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg" class="big" rel="row1">
-                            <div class="nailthumb-container mx-2">
-                                <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg" alt="" title="Image 2">
-                            </div>
-                        </a>
-
-                        <a href="https://mdbootstrap.com/img/Photos/Vertical/mountain1.jpg" class="big" rel="row2">
-                            <div class="nailthumb-container mx-2">
-                                <img src="https://mdbootstrap.com/img/Photos/Vertical/mountain1.jpg" alt="" title="Image 6">
-                            </div>
-                        </a>
-                    </div>
-                    <!-- Gallery second column ends here -->
-
-                    <!-- Gallery third column starts here -->
-                    <div class="col-md-3">
-                        <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg" class="big" rel="row1">
-                            <div class="nailthumb-container mx-2">
-                                <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg" alt="" title="Image 3">
-                            </div>
-                        </a>
-
-                        <a href="https://mdbootstrap.com/img/Photos/Vertical/mountain1.jpg" class="big" rel="row2">
-                            <div class="nailthumb-container mx-2">
-                                <img src="https://mdbootstrap.com/img/Photos/Vertical/mountain1.jpg" alt="" title="Image 7">
-                            </div>
-                        </a>
-
-                        <a href="https://mdbootstrap.com/img/Photos/Vertical/mountain1.jpg" class="big" rel="row2">
-                            <div class="nailthumb-container mx-2">
-                                <img src="https://mdbootstrap.com/img/Photos/Vertical/mountain1.jpg" alt="" title="Image 9">
+                        <a href="https://cdn.pixabay.com/photo/2022/04/06/20/30/big-ben-7116305_960_720.jpg" class="m-1" rel="">
+                            <div class="mx-2 square-thumb">
+                                <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(73).jpg" alt="" title="Image 1" class="w-100">
                             </div>
                         </a>
                     </div>
 
-                    <!-- Gallery third column ends here -->
-                    <!-- Gallery fourth column starts here -->
-                    <div class="col-md-3">
-                        <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg" class="big" rel="row1">
-                            <div class="nailthumb-container mx-2 square-thumb">
-                                <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg" alt="" title="Image 4">
+                    <div class="d-flex flex-row">
+                        <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(73).jpg" class="m-1" rel="">
+                            <div class="mx-2 square-thumb">
+                                <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(73).jpg" alt="" title="Image 1" class="w-100">
                             </div>
                         </a>
 
-                        <a href="https://mdbootstrap.com/img/Photos/Vertical/mountain1.jpg" class="big" rel="row2">
-                            <div class="nailthumb-container mx-2 square-thumb">
-                                <img src="https://mdbootstrap.com/img/Photos/Vertical/mountain1.jpg" alt="" title="Image 8">
+                        <a href="https://cdn.pixabay.com/photo/2022/04/07/11/45/bird-7117346_960_720.jpg" class="m-1" rel="">
+                            <div class="mx-2 square-thumb">
+                                <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(73).jpg" alt="" title="Image 1" class="w-100">
                             </div>
                         </a>
-                    </div>
+
+                        <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(73).jpg" class="m-1" rel="">
+                            <div class="mx-2 square-thumb">
+                                <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(73).jpg" alt="" title="Image 1" class="w-100">
+                            </div>
+                        </a>
+                        </div>
+
                     <!-- Gallery fourth column ends here -->
                 </div>
             </div>

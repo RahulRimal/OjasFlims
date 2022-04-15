@@ -157,10 +157,13 @@
 
 
     <!-- LightSlider Js -->
-    <script src="<?php echo BASE_URI;?>/templates/js/lightslider.js"></script>
+    <script src="<?php echo BASE_URI;?>templates/js/lightslider.js"></script>
 
     <!-- Simple LightBox js -->
-    <script src="<?php echo BASE_URI;?>/templates/js/simple-lightbox.jquery.min.js"></script>
+    <script src="<?php echo BASE_URI;?>templates/js/simple-lightbox.jquery.min.js"></script>
+
+    <!-- Nailthumb Js -->
+    <script src="<?php echo BASE_URI;?>templates/js/jquery.nailthumb.1.1.min.js"></script>
 
 
     <!-- Custom Js -->

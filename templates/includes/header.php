@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Ojas Flim Studio</title>
+    <title>Ojas Theatre and Flim Studio</title>
 
     <link rel="icon" href="<?php echo BASE_URI;?>assets/img/ojas-logo.png" />
 
@@ -22,6 +22,8 @@
 
     <!-- Simple lightbox css -->
     <link rel="stylesheet" href="<?php echo BASE_URI;?>/templates/css/simple-lightbox.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.3.45/css/materialdesignicons.css" integrity="sha256-NAxhqDvtY0l4xn+YVa6WjAcmd94NNfttjNsDmNatFVc=" crossorigin="anonymous" />
 
     <!-- Ckeditor Js -->
     <script src="<?php echo BASE_URI;?>templates/js/ckeditor/ckeditor.js"></script>
@@ -55,7 +57,7 @@
         <nav class="main-navbar navbar navbar-expand-lg navbar-dark">
             <div class="container-md" style="background-color: var(--primary-bg-color); width: 100%; height: 100px;">
                 <a class="navbar-brand" href="#">
-                    <img src="assets/img/ojas-logo.png" height="125px" width="125px" alt="" />
+                    <img src="assets/img/ojas-logo.png" height="auto" width="125px" alt="" />
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -75,11 +77,11 @@
                                 Events</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link d-flex flex-column align-items-center" href="pic-gallery.html">
+                            <a class="nav-link d-flex flex-column align-items-center" href="pics.php">
                                 <i class="fa fa-images"></i>Gallery</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link d-flex flex-column align-items-center" href="#"><i
+                            <a class="nav-link d-flex flex-column align-items-center" href="contact.php"><i
                                     class="fa fa-headphones"></i>Contact Us</a>
                         </li>
 

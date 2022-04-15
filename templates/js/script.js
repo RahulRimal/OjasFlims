@@ -152,8 +152,6 @@ $(document).ready(function() {
 
 // LightSlider for courses section ends here
 
-
-
 // LightSlider for our team section Starts here
 
 $(document).ready(function() {
@@ -221,7 +219,6 @@ $(document).ready(function() {
 // LightSlider for our team section ends here
 
 // LightSlider for home page artist pool carousel Starts here
-
 $(document).ready(function() {
   $("#home-page-artist-pool-carousel").lightSlider({
       item: 4,
@@ -279,10 +276,7 @@ $(document).ready(function() {
 
 // LightSlider for home page artist pool carousel ends here
 
-
-
 // LightSlider for home page artist pool single Starts here
-
 $(document).ready(function() {
   $(".lightSlider-artist-pool-carousel").lightSlider({
       item: 1,
@@ -340,8 +334,6 @@ $(document).ready(function() {
 });
 
 // LightSlider for home page artist pool single Ends here
-
-
 
 // LightSlider for our client feedback section Starts here
 
@@ -412,8 +404,6 @@ $(document).ready(function() {
 
 // Home page simple-lightbox gallery starts here
 
-
-
 // Home page simple-lightbox gallery ends here
 
 
@@ -423,13 +413,13 @@ $(document).ready(function() {
 
 // Pic gallery page starts here
 
-$(document).ready(function(){
-  $('.nailthumb-container').nailthumb({
-    // width:300, height:300,
-    method:'resize',
-    // fitDirection: 'bottom center',
-});
-});
+// $(document).ready(function(){
+//   $('.nailthumb-container').nailthumb({
+//     // width:300, height:300,
+//     // method:'resize',
+//     // fitDirection: 'bottom center',
+// });
+// });
 
 $('.pic-gallery-page a').simpleLightbox();
 
