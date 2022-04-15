@@ -18,9 +18,10 @@
                     
                     <div class="d-flex flex-wrap justify-content-center">
 
-                        <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(73).jpg" class="mb-2" rel="">
+                        <a href="https://www.youtube.com/watch?v=KlDUtTDm5jY" class="mb-2" rel="">
                             <div class="mx-2">
-                                <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(73).jpg" alt="" title="Image 1" class="w-100 square-thumb">
+                                <!-- <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(73).jpg" alt="" title="Image 1" class="w-100 square-thumb"> -->
+                                <video src="https://www.youtube.com/watch?v=KlDUtTDm5jY"></video>
                             </div>
                         </a>
 

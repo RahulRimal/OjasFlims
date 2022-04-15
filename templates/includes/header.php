@@ -41,8 +41,8 @@
                         <p>mail@ojasflims.com</p>
                     </div>
                     <div class="topbar-links">
-                        <a href="#"><i class="fa fa-facebook-official pe-3" aria-hidden="true"></i></a>
-                        <a href="#"><i class="fa fa-envelope pe-3" aria-hidden="true"></i></a>
+                        <a href="https://www.facebook.com/Ojasstudionp/" target="null"><i class="fa fa-facebook-official pe-3" aria-hidden="true"></i></a>
+                        <a href="mailto: mail@ojasfilms.org" target="null"><i class="fa fa-envelope pe-3" aria-hidden="true"></i></a>
                     </div>
                 </div>
             </div>

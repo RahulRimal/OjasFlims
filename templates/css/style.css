@@ -147,9 +147,16 @@ li {
 
 .square-thumb
 {
-  width: 20%!important;
-  height: auto!important;
+  width: 104%!important;
+  height: 160px!important;
+}
 
+
+.required-symbol
+{
+  color: var(--primary-color);
+  font-size: 20px;
+  font-weight: 700;
 }
 
 
@@ -271,7 +278,8 @@ section .heading {
   width: 70px;
   height: 10px;
   background-color: var(--primary-color);
-  right: 745px;
+  /* right: 745px; */
+  left: 42%!important;
 }
 /* Our Courses Card starts here */
 
@@ -921,7 +929,7 @@ section .heading {
 
 /* Registeration page starts here */
 
-#register-form input
+ #register-form input[type=text], input[type=tel], input[type=number], input[type=date], input[type=email], input[type=password], input[type=file]
 {
   border: 1px solid var(--primary-bg-color);
   border-radius: 10px;

@@ -36,19 +36,19 @@
                                             <i style="font-size: 12px; margin-right: 5px" class="fa fa-arrow-right"
                                                 aria-hidden="true">
                                             </i>
-                                            <a href="#">Home</a>
+                                            <a href="<?php echo BASE_URI;?>">Home</a>
                                         </li>
                                         <li class="d-flex align-items-center">
                                             <i style="font-size: 12px; margin-right: 5px" class="fa fa-arrow-right"
                                                 aria-hidden="true">
                                             </i>
-                                            <a href="#">AboutUs</a>
+                                            <a href="<?php echo BASE_URI;?>about.php">AboutUs</a>
                                         </li>
                                         <li class="d-flex align-items-center">
                                             <i style="font-size: 12px; margin-right: 5px" class="fa fa-arrow-right"
                                                 aria-hidden="true">
                                             </i>
-                                            <a href="#">Contact Us</a>
+                                            <a href="<?php echo BASE_URI;?>contact">Contact Us</a>
                                         </li>
                                         <li class="d-flex align-items-center">
                                             <i style="font-size: 12px; margin-right: 5px" class="fa fa-arrow-right"
@@ -63,7 +63,7 @@
                     </div>
 
                     <div class="col-lg-3 col-md-4">
-                        <div class="footer-widget">
+                        <!-- <div class="footer-widget">
                             <div class="text-left">
                                 <div class="widget-heading">
                                     <h3>ShareLearning</h3>
@@ -72,11 +72,11 @@
                                     <p>
                                         Ratopul, Kathmandu <br />Nepal <br /><strong>Phone: </strong>+977 9873645738
                                         <br /><strong>Email:</strong>
-                                        mail@ojasflims.com
+                                        contact@ojasflims.com
                                     </p>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
 
                     <div class="col-lg-3 col-md-4">

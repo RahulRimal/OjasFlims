@@ -9,3 +9,11 @@ define("SITE_TITLE", "Share Your Learning");
 
 //Paths
 define ('BASE_URI', 'http://'.$_SERVER['SERVER_NAME'].'/OjasFilms/');
+
+
+
+// Official Emails
+
+define('REGISTER_MAIL', 'register@ojasfilms.org');
+define('CONTACT_MAIL', 'contact@ojasfilms.org');
+define('ADMIT_MAIL', 'admit@ojasfilms.org');
