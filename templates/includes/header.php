@@ -118,6 +118,8 @@
         </nav>
     </header>
 
+    <?php echo displayMessage();?>
+
     <!-- Header ends here -->
 
     <!-- Hero Starts Here  -->
