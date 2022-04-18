@@ -56,7 +56,7 @@
     <header id="header" class="sticky-top">
         <nav class="main-navbar navbar navbar-expand-lg navbar-dark">
             <div class="container-md" style="background-color: var(--primary-bg-color); width: 100%; height: 100px;">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="<?php echo BASE_URI;?>">
                     <img src="assets/img/ojas-logo.png" height="auto" width="125px" alt="" />
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -75,6 +75,10 @@
                             <a class="nav-link d-flex flex-column align-items-center" href="#">
                                 <i class="fa fa-trophy" aria-hidden="true"></i>Achivements and
                                 Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex flex-column align-items-center" href="<?php echo BASE_URI;?>about.php">
+                                <i class="fa fa-info" aria-hidden="true"></i>Know about Us</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link d-flex flex-column align-items-center" href="pics.php">

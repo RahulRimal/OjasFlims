@@ -15,7 +15,6 @@
             </div>
             <div id="pic-gallery-page" class="section-body pic-gallery-page">
                 <div>
-                    
                     <div class="d-flex flex-wrap justify-content-center">
 
                         <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(73).jpg" class="mb-2" rel="">
