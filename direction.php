@@ -9,3 +9,4 @@ $template = new Template('templates/direction-course-page.php');
 echo $template;
 
 ?>
+
