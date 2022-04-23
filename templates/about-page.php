@@ -2,10 +2,10 @@
 
 <!-- Hero Starts Here  -->
 
-<section id="hero">
+<section class="hero">
     <div class="col-xxl-8 px-4 py-5 about-page-hero-container">
         <div class="hero-container-overlay"></div>
-        <div class="row flex-lg-row-reverse align-items-center g-5 py-5 hero-container-content">
+        <div class="align-items-center g-5 py-5 hero-container-content">
             <!-- <div class="col-10 col-sm-8 col-lg-6">
                     <img src="https://cdn.pixabay.com/photo/2020/01/21/20/44/mountains-4783955__340.jpg"
                         class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="300"
@@ -30,8 +30,11 @@
 
     <div class="main-wide-content container-fluid">
         <section id="about-page-description-section" class="my-5">
-            <h5 class="mx-5 text-md-left text-lg-center" style="font-weight: 700;">
-                Ojas offers reliable and effective path to an incredible career in film, television, theatre and digital media. We help you turn your creativity and raw energy into practical skills that competitive world of entertainment industry demands today. Our courses are career focused and application oriented. Our commitment is to produce skilled and influential film makers with hands-on practical experiences mentored by national and international film industry professionals
+            <h5 class="mx-1 mx-lg-5 text-md-justify" style="font-weight: 700;">
+            First time in Nepal,"Ojas theatre and film studio (OTFS)" is an autonomous institution of film education , media arts and theatre located in Ratopul, Kathmandu ,the main hub for film and theatre fanatics, film personalities & film makers from around the world.
+We have devoted ourselves in exploring, popularizing and preserving the varieties of traditional and indigenous theatrical forms of our society, and we look forward to work even more actively in the days ahead. And the history of film making dates back to the 1890s: Cinematic experience has meticulously prospered globally since then but Nepal still lags behind in this industry. Cinema reflects the heart of its country so we, OTFS aim to develop outstanding visual storytellers, industry leaders, influences and scholars whose diverse and ground breaking voices and minds inspire change for a better cinematic world experience. We believe that films have the power to influence and change the perspective of every individual in the right direction so our mission is to augment the best knowledge, hand on experience and ecstasy that goes into film making requisite to pursue a professional career in this field to raise the bars for Nepali film industry.
+Ojas theatre and film studio is a registered company that delivers theatre and film productions and related services. It is registered as a non-profit organization to serve its respective vision and mission for social responsibilities.
+
             </h5>
         </section>
 
@@ -41,14 +44,14 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="achievement-content" style="margin: 0 70px;">
-                            <h2 class="text-center rounded-circle" style="padding:35px 0;">30+</h2>
+                            <h2 class="text-center rounded-circle" style="padding:35px 0;">300+</h2>
                         </div>
                         <div class="achievement-subcontent">
                             <div class="achievements-heading text-center">
                                 Students at OJAS
                             </div>
                             <div class="achievements-body text-center">
-                                There are currently 30+ student at present at Ojas Theatre
+                                There are currently 300+ student at present at Ojas Theatre
                             </div>
                         </div>
                     </div>
@@ -185,10 +188,10 @@
 
         <!-- Our Vision section starts here -->
 
-        <section id="about-page-our-vision-section" class="my-5">
+        <section id="about-page-our-vision-section">
             <div class="section-top">
                 <h3 class="heading">
-                    <!-- Our Vision -->
+                    Our Vision
                     <div class="heading-underline"></div>
                 </h3>
             </div>
@@ -200,11 +203,11 @@
                         <h5 class="custom-font" style="font-style: italic;">Coordinator</h5>
                     </div>
                     <div class="col-md-8">
-                        <h2 class="text-center custom-font-bold">
+                        <!-- <h2 class="text-center custom-font-bold">
                             Our Vision
-                        </h2>
+                        </h2> -->
                         <h5 class="text-left">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio itaque eveniet autem veniam facilis impedit qui, similique tempora soluta. A necessitatibus consequatur, perferendis totam labore eveniet pariatur modi minima ipsum magni eaque, nulla unde. Cupiditate, reprehenderit, incidunt eaque porro deserunt harum, dolorem ullam explicabo ex sint deleniti. Porro atque, tenetur numquam, voluptatibus animi suscipit ipsum consequatur odit ex optio est veniam quibusdam, veritatis mollitia eos sunt ducimus! Sequi ratione odio quis omnis earum sit neque dolores, ex numquam odit minima quas vel inventore eius aut. Autem voluptatem voluptas a sed voluptate velit iste debitis? Molestias rerum quis sapiente ipsam odit cum voluptas quam, officia debitis. Non numquam, corrupti itaque molestiae, quas ad illum, quia nihil deleniti similique consequuntur perferendis recusandae culpa nam inventore eaque eligendi officia aliquam laudantium ullam expedita laborum fuga iure perspiciatis. Laboriosam, ducimus recusandae illo tempore enim quia cumque repellat exercitationem voluptatum ipsum animi quisquam maiores labore deserunt quas illum obcaecati? Dolorem error debitis saepe quibusdam, explicabo itaque, ipsam aut eum fugiat temporibus quod vel nostrum doloremque voluptas dolores repudiandae consectetur ad assumenda soluta, rem ipsa nobis veniam quidem expedita. In ut eaque quas optio, natus praesentium iste quibusdam adipisci placeat sapiente magnam iure, tenetur voluptatem. Consectetur.
+                        The driving spirit of Ojas theatre and film studio is our people’s freedom, happiness and betterment. We envision a society that strongly appreciates and celebrates each other’s cultural diversity.
                         </h5>
                     </div>
                 </div>
@@ -212,6 +215,61 @@
         </section>
 
         <!-- Our Vision section ends here -->
+
+        <!-- Our Mission section starts here -->
+
+        <section class="hero">
+    <div class="col-xxl-8 px-4 py-lg-5 about-page-hero-container">
+        <div class="hero-container-overlay"></div>
+        <div class="align-items-center g-5 py-lg-5 our-mission-hero-container-content">
+            <!-- <div class="col-10 col-sm-8 col-lg-6">
+                    <img src="https://cdn.pixabay.com/photo/2020/01/21/20/44/mountains-4783955__340.jpg"
+                        class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="300"
+                        loading="lazy">
+                </div> -->
+            <div class="col-lg-12 text-white px-lg-5">
+                <h1 class="display-5 fw-bold lh-1 mb-3 text-center">Our Mission</h1>
+                <p>We want to develop Ojas theatre and film studio as an inclusive and open space that encourages and fosters dialogue, exchange and the celebration and strengthening of Nepal’s cultural diversity. In addition, we strive to offer a platform especially to young theatre artists and film activists to explore and collaborate for innovative performances and art-works. OTFS aims to holistically function as a premier worldwide interdisciplinary professional film and theatre to make Nepali film industry prosperous.Our mission is to become the main hub for film makers and film enthusiasts to connect nationally as well as globally.
+                        Through our theatre and film productions, we are committed to develop and practice a creative style that is strongly based on Nepali theatre film and culture, as well as deeply rooted in our desire to be a strong.Yet, aesthetical, voice for social justice, political awareness and human rights.</p>
+                <!-- <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                    <button type="button" class="btn btn-success btn-lg px-4 me-md-2">Register Your Name</button>
+                    <button type="button" class="btn btn-outline-warning btn-lg px-4">More Information</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+</section>
+        
+        <!-- Our Mission section ends here -->
+
+        <!-- Our mission section starts here -->
+
+        <!-- <section id="misc-section" class="my-5">
+                <div class="section-body">
+                    <div class="motivation-area">
+                        <div class="row">
+                            <div class="col-md-6">
+
+                            </div>
+                            <div class="col-md-6 text-center d-flex align-items-center" style="height: 600px;">
+                                <h3 style="color: white;" class="h1">
+                                We want to develop Ojas theatre and film studio as an inclusive and open space that encourages and fosters dialogue, exchange and the celebration and strengthening of Nepal’s cultural diversity. In addition, we strive to offer a platform especially to young theatre artists and film activists to explore and collaborate for innovative performances and art-works. OTFS aims to holistically function as a premier worldwide interdisciplinary professional film and theatre to make Nepali film industry prosperous.Our mission is to become the main hub for film makers and film enthusiasts to connect nationally as well as globally.
+                        Through our theatre and film productions, we are committed to develop and practice a creative style that is strongly based on Nepali theatre film and culture, as well as deeply rooted in our desire to be a strong.Yet, aesthetical, voice for social justice, political awareness and human rights.
+                                </h3>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="section-bottom"> -->
+                    <!-- <div class="misc-wave">
+                </div>
+                </div>
+
+
+            </section> -->
+
+            <!-- Our mission section ends here -->
 
 
     </div>

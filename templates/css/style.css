@@ -189,7 +189,7 @@ li {
 }
 
 .main-navbar {
-  height: 100px;
+  height: 115px;
 }
 
 .main-navbar .nav-item {
@@ -902,6 +902,24 @@ section .heading {
   left: 24%;
 }
 
+.our-mission-hero-container-content
+{
+  position: absolute;
+  z-index: 99;
+}
+
+@media screen and (max-width: 480px) {
+  .hero-container-content
+  {
+    left: 10%;
+  }
+
+  .our-mission-hero-container-content
+  {
+    left: 1%;
+  }
+}
+
 
 #about-page-achievements .achievement-content h2
 {
@@ -918,6 +936,11 @@ section .heading {
   font-family: var(--secondary-font-family);
   font-size: 25px;
   font-weight: bold;
+}
+
+
+#about-page-our-mission-section .section-body-inner{
+  background: rgba(0, 0, 0, 0.8);
 }
 
 

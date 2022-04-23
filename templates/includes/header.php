@@ -64,33 +64,33 @@
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse p-3" id="navbarSupportedContent"
+                <div class="collapse navbar-collapse p-3 d-lg-flex justify-content-end" id="navbarSupportedContent"
                     style="background-color: var(--primary-bg-color);">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link active d-flex flex-column align-items-center" href="#">
                                 <i class="fas fa-book-open" aria-hidden="true"></i>Courses</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link d-flex flex-column align-items-center" href="#">
+                            <a class="nav-link d-flex flex-column align-items-center text-center" href="#">
                                 <i class="fa fa-trophy" aria-hidden="true"></i>Achivements and
                                 Events</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link d-flex flex-column align-items-center" href="<?php echo BASE_URI;?>about.php">
+                            <a class="nav-link d-flex flex-column align-items-center text-center" href="<?php echo BASE_URI;?>about.php">
                                 <i class="fa fa-info" aria-hidden="true"></i>Know about Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link d-flex flex-column align-items-center" href="pics.php">
+                            <a class="nav-link d-flex flex-column align-items-center text-center" href="pics.php">
                                 <i class="fa fa-images"></i>Gallery</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link d-flex flex-column align-items-center" href="contact.php"><i
+                            <a class="nav-link d-flex flex-column align-items-center text-center" href="contact.php"><i
                                     class="fa fa-headphones"></i>Contact Us</a>
                         </li>
 
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle d-flex flex-column align-items-center" href="#"
+                            <a class="nav-link dropdown-toggle d-flex flex-column align-items-center text-center" href="#"
                                 id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i
                                     class="fa fa-graduation-cap"></i>New Admission
                             </a>
@@ -106,7 +106,7 @@
                             </ul>
                         </li>
                     </ul>
-                    <form class="form-inline d-flex d-md-flex" role="form">
+                    <!-- <form class="form-inline d-flex d-md-flex" role="form">
                         <div class="input-group">
                             <input type="text" class="form-control shadow-none" placeholder="Search"
                                 aria-label="SearchHere" aria-describedby="basic-addon2" />
@@ -116,7 +116,7 @@
                                 </button>
                             </div>
                         </div>
-                    </form>
+                    </form> -->
                 </div>
             </div>
         </nav>
